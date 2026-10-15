@@ -44,7 +44,3 @@ Create a `.env` file in `frontend` (see `.env.example`):
 ```
 VITE_API_URL=http://localhost:5000
 ```
-
-## Admin Login (created by seed)
-- Email: admin@grocery.com
-- Password: admin123
