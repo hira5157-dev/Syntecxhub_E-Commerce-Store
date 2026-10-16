@@ -40,8 +40,9 @@ a:hover { color: var(--accent); }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
 .card { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
-.card-img { height: 140px; position: relative; display: flex; align-items: flex-end; padding: 12px; }
-.card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card-img { height: 140px; position: relative; display: flex; align-items: flex-end; padding: 12px; background: #fff; }
+/* FIX: image ka size fixed + poori image nazar aaye (crop/zoom nahi) */
+.card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; padding: 30px 12px 10px; background: #fff; }
 .badge { position: relative; background: #fff; border-radius: 99px; padding: 4px 10px; font-size: 12px; }
 .card-body { padding: 16px; display: flex; flex-direction: column; gap: 6px; }
 .card-title { font-size: 17px; font-weight: 600; }
